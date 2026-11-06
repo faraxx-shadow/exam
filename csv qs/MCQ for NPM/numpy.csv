@@ -1,0 +1,60 @@
+What is NumPy?,A database,A Python library,A web framework,An IDE,B
+Which of these is used to create an array in NumPy?,array(),arr(),numpy.array(),Both array() and numpy.array(),D
+"What does np.zeros((3,3)) do?",Creates a 1D array of 3 zeros,Creates a 2D array of zeros,Creates a 3D array of zeros,Throws an error,B
+How do you import NumPy?,import np,import numpy as np,import numpy.py,import numpy_lib,B
+Which function is used to find the mean in NumPy?,np.mean(),np.avg(),np.find_mean(),np.mean_val(),A
+What does np.arange(5) generate?,"Array with elements [1, 2, 3, 4, 5]","Array with elements [0, 1, 2, 3, 4]",Array with elements [5],Throws an error,B
+"What is the output of np.linspace(0, 5, 6)?","[0, 1, 2, 3, 4, 5]","[0, 5]",6 equally spaced values from 0 to 5,5 equally spaced values from 0 to 5,C
+How do you get the shape of a NumPy array?,np.size(),np.shape(),np.dim(),np.get_shape(),B
+Which function reshapes an array?,np.reshape(),np.format(),np.change_shape(),np.shape(),A
+"What does np.ones((2,3)) return?","Array of 1s with shape (3,2)","Array of 1s with shape (2,3)","Array of 1s with shape (3,3)",Throws an error,B
+How do you perform element-wise addition in NumPy?,array1.add(array2),array1 + array2,"np.add_elements(array1, array2)","np.element_add(array1, array2)",B
+What does np.random.rand() do?,Generates a random integer,Generates a random number between 0 and 1,Generates a random array,None of the above,B
+How do you calculate the dot product in NumPy?,np.dot(),np.multiply(),np.product(),np.matmul(),A
+What is the use of np.transpose()?,Flattens the array,Converts array to list,Swaps the axes of the array,None of the above,C
+Which function stacks arrays vertically?,np.vstack(),np.hstack(),np.stack_vertically(),np.combine(),A
+How do you access the first element of a NumPy array?,array[0],array[1],array.first(),array.get(0),A
+What does np.unique() do?,Removes duplicates from an array,Sorts the array,Finds unique rows,Finds unique elements in an array,D
+What is the default datatype of a NumPy array?,int,float,double,None,B
+Which of the following creates an identity matrix?,np.identity(),np.eye(),Both np.identity() and np.eye(),None of the above,C
+How do you calculate the sum of all elements in a NumPy array?,np.add(),np.sum(),np.total(),np.array_sum(),B
+What does np.argmax(array) return?,Minimum value index,Maximum value,Maximum value index,None of the above,C
+How do you flatten a NumPy array?,np.flatten(),array.ravel(),np.flat(),array.flatten(),B
+Which function returns the standard deviation?,np.std(),np.var(),np.mean(),np.deviation(),A
+"What does np.concatenate((array1, array2), axis=0) do?",Joins arrays vertically,Joins arrays horizontally,Stacks arrays,Throws an error,A
+Which function calculates the cumulative sum?,np.sum(),np.cumsum(),np.accumulate(),np.add_cumsum(),B
+What does np.where(array > 5) return?,Indexes where condition is true,Values greater than 5,Array with boolean values,None of the above,A
+Which function computes the inverse of a matrix?,np.inv(),np.linalg.inv(),np.matrix_inv(),None of the above,B
+How do you copy an array in NumPy?,np.copy(),array.copy(),Both np.copy() and array.copy(),array.deepcopy(),C
+What is np.nan?,Infinity,Not a number,A missing value,None of the above,B
+Which function finds the minimum value in an array?,np.min(),np.minimum(),np.min_value(),None of the above,A
+"What is the output of np.array([1, 2]) + np.array([3, 4])?","[4, 6]","[1, 2, 3, 4]","[1, 2]",Error,A
+Which function is used to find the variance of an array?,np.var(),np.variance(),np.stddev(),np.meanvar(),A
+How do you create a 3x3 matrix of random integers between 1 and 10?,"np.random.random(3, 3)","np.random.randint(1, 10, (3, 3))","np.random.int(1, 10, 3, 3)",None of the above,B
+What does np.all() do?,Returns True if any value is True,Returns True if all values are True,Returns False if all values are False,None of the above,B
+"What is the result of np.array([1, 2]) * np.array([3, 4])?","[1, 4, 9, 16]","[3, 8]","[3, 4]",Error,B
+How do you save a NumPy array to a file?,np.save(),np.store(),np.array_save(),np.file_save(),A
+What does np.dot() compute?,Cross product,Element-wise product,Dot product,Matrix multiplication only,C
+How do you create an array of evenly spaced numbers?,np.linspace(),np.range(),np.arange(),Both np.linspace() and np.arange(),D
+Which function is used to compute the square root of each element?,np.sqrt(),np.pow(),np.square_root(),np.square(),A
+What does np.exp(array) do?,Returns e raised to the power of array elements,Calculates the exponential sum,Finds the exponential moving average,None of the above,A
+How do you create a diagonal matrix?,np.diag(),np.diagonal(),np.diag_matrix(),None of the above,A
+What does np.isnan() check?,Checks for positive numbers,Checks for negative numbers,Checks for NaN values,None of the above,C
+Which method calculates the cross product?,np.cross(),np.dot(),np.cross_product(),np.prod(),A
+"What is the output of np.array([True, False]) & np.array([False, True])?","[True, True]","[False, False]","[False, True]","[True, False]",B
+How do you convert a NumPy array to a Python list?,array.tolist(),array.to_list(),np.array_list(),list(array),A
+"What does np.sum(array, axis=0) calculate?",Sum along rows,Sum along columns,Total sum,None of the above,B
+How do you calculate the product of all elements in an array?,np.prod(),np.product(),np.mult(),np.multiply(),A
+"What is the result of np.array([1, 2, 3]) ** 2?","[1, 4, 9]","[1, 2, 3]","[1, 8, 27]","[1, 16, 81]",A
+What does np.copy(array) do?,Creates a shallow copy,Creates a deep copy,Both shallow and deep copies,None of the above,B
+How do you find the maximum value in a NumPy array?,np.max(),np.maximum(),np.max_val(),np.find_max(),A
+What does np.random.choice(array) return?,Random element from the array,Random integer,Random float,None of the above,A
+How do you calculate the natural logarithm of array elements?,np.log(),np.ln(),np.logarithm(),np.natural_log(),A
+What is the default behavior of np.sort()?,Sorts array in ascending order,Sorts array in descending order,Returns indices of sorted elements,None of the above,A
+"What does np.corrcoef(array1, array2) calculate?",Covariance,Correlation coefficient,Both covariance and correlation coefficient,None of the above,B
+Which function is used to compute the absolute value?,np.abs(),np.absolute(),Both np.abs() and np.absolute(),None of the above,C
+"What is the output of np.array([1, 2, 3]) > 2?","[True, True, True]","[False, True, True]","[False, False, True]","[False, False, False]",C
+How do you reverse a NumPy array?,np.reverse(),array[::-1],np.flip(),Both array[::-1] and np.flip(),D
+"What is the result of np.array([1, 2, 3]) // 2?","[1, 2, 3]","[0, 1, 1]","[0, 1, 1.5]","[1, 1, 1]",B
+How do you calculate the cumulative product?,np.prod(),np.cumprod(),np.cum_product(),np.product_sum(),B
+Which function calculates the inverse hyperbolic sine?,np.asinh(),np.sinh(),np.inverse_sinh(),None of the above,A

@@ -1,0 +1,34 @@
+[
+  {
+    "studentId": "C481",
+    "name": "mageswar.r",
+    "subject": "deep learning",
+    "date": "2026-10-12",
+    "total": 61,
+    "correct": 37,
+    "wrong": 24,
+    "percentage": 60.66,
+    "timeTaken": "08:17",
+    "violationCount": 0,
+    "integrity": "Clean",
+    "terminated": false,
+    "submittedAt": "2026-10-12T02:57:28.913Z",
+    "clientIp": "192.168.1.103"
+  },
+  {
+    "studentId": "C474",
+    "name": "ASWINI PRIYA.S",
+    "subject": "DEEP LEARNING",
+    "date": "2026-10-17",
+    "total": 61,
+    "correct": 34,
+    "wrong": 27,
+    "percentage": 55.74,
+    "timeTaken": "14:15",
+    "violationCount": 0,
+    "integrity": "Clean",
+    "terminated": false,
+    "submittedAt": "2026-10-17T14:16:49.598Z",
+    "clientIp": "192.168.1.113"
+  }
+]

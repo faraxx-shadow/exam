@@ -1,0 +1,61 @@
+﻿Question,Option A,Option B,Option C,Option D,Correct Answer
+What is the main goal of the project described in the tutorial?,Predict student placement status,Predict student attendance,Predict student salary,Predict student age,A
+Which programming language is used for the project?,Java,Python,C++,PHP,B
+Which platform is suggested for running the project without local installation?,Google Colab,Microsoft Word,MySQL Workbench,PowerPoint,A
+Which library is mainly used for data manipulation?,Pandas,Seaborn,Scikit-learn,Matplotlib,A
+Which library provides the machine learning models in this project?,NumPy,Pandas,Scikit-learn,Seaborn,C
+Which dataset is used in the project?,Iris Dataset,Campus Recruitment Dataset,Titanic Dataset,House Price Dataset,B
+What is the name of the CSV file used in the tutorial?,students.csv,Placement_Data_Full_Class.csv,placement.csv,Campus_Data.csv,B
+How many student records are mentioned in the dataset?,150,200,215,250,C
+What is the target variable of the project?,gender,degree_p,status,mba_p,C
+What does the target variable represent?,Student gender,Placement status,Degree percentage,Work experience,B
+What does Machine Learning do differently from traditional rule-based programming?,It only uses fixed IF conditions,It automatically finds patterns from data,It removes all data,It only creates charts,B
+"In the tutorial, approximately what percentage of data is used for training?",20%,50%,70%,80%,D
+Approximately what percentage of data is used for testing?,10%,20%,40%,80%,B
+How many students are used for training according to the tutorial?,43,100,172,215,C
+How many students are used for testing according to the tutorial?,20,43,72,172,B
+Which function is used to load the CSV file?,pd.open(),pd.read_csv(),pd.load_csv(),pd.import_csv(),B
+What does df.head() display by default?,Last five rows,First five rows,Only column names,Statistical summary,B
+Which function is used to view information about columns and data types?,df.info(),df.describe(),df.head(),df.shape(),A
+Which function provides a statistical summary of numerical data?,df.info(),df.describe(),df.summary(),df.stats(),B
+Which plot is used to show placement status distribution in the tutorial?,Pie chart,Line chart,Scatter plot,Histogram,A
+Which plot is used to compare degree percentage with placement status?,Box plot,Pie chart,Line chart,Area chart,A
+Which library is imported as plt for plotting?,Pandas,Matplotlib,Seaborn,NumPy,B
+Which library is imported as sns?,Seaborn,Scikit-learn,Pandas,Matplotlib,A
+Why is data preprocessing required before training the model?,Models generally require numerical input,It increases the number of students,It removes Python,It creates the CSV file,A
+Which column contains missing salary values in the tutorial?,gender,salary,status,degree_p,B
+What value is used to fill missing salary values?,-1,0,50,100,B
+Which class is used to convert categorical text values into numerical labels?,StandardScaler,LabelEncoder,RandomForestClassifier,LogisticRegression,B
+What is the purpose of LabelEncoder in this project?,To create charts,To convert categorical values into numbers,To split the dataset,To calculate accuracy,B
+Which columns are included as features X in the project?,Only status,"gender, academic scores, workex, etest_p, specialisation and mba_p",Only salary,Only degree_p,B
+What does y represent in the project?,Input features,Target output,CSV filename,Model accuracy,B
+Which function is used to split the data into training and testing sets?,train_test_split(),split_data(),data_split(),test_train(),A
+What test_size value is used in the tutorial?,0.1,0.2,0.5,0.8,B
+What does random_state=42 help provide?,A fixed/reproducible split,Higher accuracy automatically,More records,Missing-value removal,A
+Which model is described as simple and fast?,Random Forest,Logistic Regression,Decision Tree only,K-Means,B
+Which Logistic Regression parameter is increased to help convergence?,n_estimators,max_iter,random_state,test_size,B
+What max_iter value is used for Logistic Regression?,10,100,500,1000,D
+Why can Logistic Regression produce a string-to-float ValueError in this project?,The workex column contains text values,The CSV has no rows,The model is too accurate,The target is numeric,A
+How is the workex column converted to numerical values?,Using LabelEncoder,Using Random Forest,Using pie chart,Using train_test_split,A
+"In the tutorial's example, what does Yes become after encoding workex?",0,1,2,10,B
+Which model is described as more powerful in the tutorial?,Logistic Regression,Random Forest,Linear Regression,K-Means,B
+Which class is used to create the Random Forest model?,RandomForestClassifier,RandomForestRegressor,ForestClassifier,RandomTreeClassifier,A
+How many estimators are specified for the Random Forest?,10,50,100,500,C
+Which method is used to train the machine learning model?,fit(),train(),learn(),build(),A
+Which method is used to generate predictions?,predict(),forecast(),classify(),result(),A
+Which metric is used in the tutorial to calculate model accuracy?,accuracy_score(),score_accuracy(),model_accuracy(),accuracy(),A
+Approximately what Logistic Regression accuracy is shown as a typical result?,63%,73%,83%,93%,C
+Approximately what Random Forest accuracy is shown as a typical result?,66%,76%,86%,96%,C
+Which tool is used to create the confusion matrix?,confusion_matrix(),matrix_score(),confusion_score(),classification_matrix(),A
+What does a confusion matrix compare?,Actual and predicted classes,Features and columns,Training and CSV files,Charts and tables,A
+"In the example confusion matrix, how many Not Placed students are correctly predicted?",2,4,12,25,C
+"In the example confusion matrix, how many Placed students are correctly predicted?",2,4,12,25,D
+How many wrong predictions are shown in the example confusion matrix?,4,6,12,25,B
+Which function generates a detailed classification report?,classification_report(),report_model(),class_report(),model_report(),A
+Which Random Forest attribute provides feature importance values?,feature_importances_,importance_features,feature_scores,importance_,A
+Which feature is listed as the most important in the tutorial's typical findings?,Gender,Degree Percentage,Specialization,Work Experience,B
+What approximate importance is assigned to Degree Percentage in the tutorial's typical findings?,10%,20%,40%,60%,C
+What is the purpose of predict_proba()?,To return class probabilities,To split the dataset,To encode text,To create a chart,A
+What does prediction == 1 represent in the example?,Not Placed,Placed,Female,No work experience,B
+Which widget is used to create dropdowns and sliders for the interactive form?,ipywidgets,tkinter,Flask,Django,A
+Which widget is used for selecting Male/Female in the interactive form?,Dropdown,TextArea,Checkbox only,Output,A

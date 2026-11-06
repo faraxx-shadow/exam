@@ -1,0 +1,60 @@
+"In ReactJS, which method is used to limit the number of documents returned by a query?",find(),limit(),skip(),sort(),B
+What is the correct way to create a React component?,function MyComponent() {},class MyComponent extends React.Component {},Both A and B,None of the above,C
+Which hook is used to manage state in a functional React component?,useEffect,useState,useContext,useReducer,B
+Which lifecycle method is called after a component is mounted?,componentDidMount,componentWillUnmount,shouldComponentUpdate,render,A
+How do you pass data from a parent to a child component?,Using state,Using props,Using setState,Using context,B
+What is JSX?,JavaScript XML,JavaScript Syntax Extension,JavaScript and XML,All of the above,D
+Which method is used to update the state in a class component?,setState(),updateState(),changeState(),modifyState(),A
+What is the purpose of keys in React lists?,To uniquely identify elements,To style elements,To bind data,To improve performance,A
+Which hook lets you perform side effects in functional components?,useState,useEffect,useContext,useMemo,B
+What does 'lifting state up' mean in React?,Moving state to a parent component,Moving state to a child component,Using context,Using Redux,A
+How do you prevent a form from submitting in React?,e.preventDefault(),return false,stopPropagation(),None of these,A
+Which attribute is used to specify inline styles in React?,style,class,className,styles,A
+"In React, how do you conditionally render components?",Using if statements,Using ternary operators,Using && operator,All of the above,D
+What is the default port when running a React app locally?,3000,8080,5000,4000,A
+Which package is required to route in React applications?,react-router-dom,react-navigation,react-router,router,A
+How do you create a ref in a functional component?,React.createRef(),useRef(),createRef(),useState(),B
+Which of the following is a controlled component?,An input element with value managed by React state,An input element with value from the DOM,An uncontrolled input,None of the above,A
+Which hook is used to optimize performance by memoizing a function?,useMemo,useCallback,useEffect,useState,B
+What is the purpose of React.Fragment?,To group multiple elements without adding extra nodes to the DOM,To style elements,To add keys to elements,None of the above,A
+Which of the following is true about React keys?,They help React identify which items have changed,They must be unique only among siblings,They improve list rendering performance,All of the above,D
+How can you access the value of an input element in React?,Using refs,Using event.target.value,Using state,All of the above,D
+Which command is used to create a new React app?,npm create react-app,npm init react-app,npx create-react-app,npm install react-app,C
+What does the useContext hook do?,Manages local state,Accesses context data,Handles side effects,Updates DOM,B
+Which method is used to stop propagation of an event in React?,e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),None of the above,B
+How do you pass children to a React component?,Using props.children,Using children prop,Using slots,Using innerHTML,A
+Which of the following is NOT a valid React hook?,useFetch,useState,useEffect,useRef,A
+"In React, what is reconciliation?",Process of updating the DOM,Data fetching mechanism,State management,Handling events,A
+What is the correct way to handle errors in React components?,Using try/catch in render method,Using componentDidCatch lifecycle method,Using useError hook,No error handling is needed,B
+What does the React StrictMode do?,Helps find potential problems,Enhances styling,Improves performance,Handles errors,A
+How do you create a portal in React?,ReactDOM.createPortal(),React.createPortal(),ReactDOM.createRoot(),React.createRootPortal(),A
+What does the useReducer hook do in React?,Manages local state,Provides a way to handle complex state logic,Replaces useEffect,Handles context,B
+Which React hook is used to memoize expensive calculations?,useMemo,useCallback,useEffect,useState,A
+"In React, how can you prevent a component from re-rendering unnecessarily?",Using shouldComponentUpdate,Using React.memo,Using PureComponent,All of the above,D
+What does JSX get compiled into?,HTML,JavaScript objects,React.createElement calls,Strings,C
+Which method is used to force update a class component?,forceUpdate(),setState(),updateComponent(),refresh(),A
+How do you conditionally add classes in React?,Using ternary operator in className,Using class attribute,Using inline styles,Using CSS files,A
+What will React do if keys are missing in a list?,Throw an error,Ignore and render without keys,Log a warning and may re-render inefficiently,Not render the list,C
+Which of the following is used to handle forms in React?,Controlled components,Uncontrolled components,Both A and B,None of the above,C
+How do you access the previous state value inside a setState callback?,Using this.state,Using a function inside setState,Using props,Using useEffect,B
+Which of the following is NOT a React hook?,useState,useEffect,useComponent,useRef,C
+What is a pure component in React?,A component that only renders UI,A component that implements shouldComponentUpdate with shallow prop and state comparison,A functional component,A component with no state,B
+How do you pass an event handler to a child component?,As a prop,Using context,Using state,Using Redux,A
+What is the default behavior of form submission in React?,Page reload,AJAX submission,No action,Console log,A
+What is the purpose of the key prop in React lists?,To uniquely identify elements,To help React update efficiently,To avoid re-rendering,Both A and B,D
+What does the useEffect cleanup function do?,Runs before the component unmounts,Runs after every render,Runs only once,Updates the DOM,A
+Which React hook lets you share logic across components?,useState,useEffect,useContext,useCallback,C
+How do you update state based on previous state in a functional component?,Directly modify state variable,Use functional setState updater,Use useEffect,Use setTimeout,B
+Which of the following is true about React fragments?,They add extra nodes to the DOM,They help group children without extra nodes,They are not supported in JSX,They replace div tags with spans,B
+What is React.lazy used for?,Lazy loading components,Lazy rendering of elements,Lazy state updates,Lazy event handling,A
+Which command starts the React development server?,npm start,npm run,npm build,npm serve,A
+How do you write comments inside JSX?,{/* Comment */},// Comment,<!-- Comment -->,/* Comment */,A
+What is the purpose of the useCallback hook?,Memoizes a function to avoid re-creation,Memoizes a value,Runs side effects,Manages context,A
+What is the output of console.log inside useEffect without dependency array?,Runs once,Runs after every render,Runs before render,Never runs,B
+What is the significance of PureComponent?,It automatically binds methods,Implements shouldComponentUpdate with shallow comparison,Allows state mutation,It is a functional component,B
+"In React, how do you handle multiple input fields?",Separate state for each,Single state object with properties,Refs only,Both A and B,D
+How do you optimize performance in React lists?,Use keys,Use memoization,Use virtualization libraries,All of the above,D
+What is the difference between controlled and uncontrolled components?,"Controlled components handle state, uncontrolled rely on DOM",Uncontrolled components handle state,Both are same,None of the above,A
+How can you access props in functional components?,As function argument,Using this.props,Using context,Using state,A
+What will React do if you return null from a component?,Render nothing,Throw error,Render an empty div,Render default UI,A
+Which hook is used for context API?,useContext,useState,useEffect,useReducer,A

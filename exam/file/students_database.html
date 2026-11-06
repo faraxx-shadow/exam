@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Exam Database</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        overflow: hidden;
+    }
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+    .header h1 { font-size: 1.9em; margin-bottom: 6px; }
+    .header a.back-link {
+        color: white; text-decoration: underline; font-size: 0.9em;
+    }
+    .content { padding: 30px 35px; }
+
+    .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: flex-end;
+        background: #f8f9ff;
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 25px;
+    }
+    .toolbar .field { display:flex; flex-direction:column; gap:4px; }
+    .toolbar label { font-size: 0.8em; font-weight:bold; color:#555; }
+    .toolbar input, .toolbar select {
+        padding: 9px 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 0.9em;
+        min-width: 150px;
+    }
+    .btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 10px 22px;
+        font-size: 0.95em;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.15s;
+    }
+    .btn:hover { transform: scale(1.04); }
+    .btn.secondary {
+        background: white;
+        color: #667eea;
+        border: 2px solid #667eea;
+    }
+    .btn.danger {
+        background: white;
+        color: #f44336;
+        border: 2px solid #f44336;
+    }
+
+    h2.section-title {
+        color: #667eea;
+        margin: 30px 0 15px 0;
+        font-size: 1.3em;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+        border-radius: 12px;
+        border: 1px solid #eee;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.92em;
+        min-width: 700px;
+    }
+    thead th {
+        background: #667eea;
+        color: white;
+        text-align: left;
+        padding: 12px 14px;
+        position: sticky;
+        top: 0;
+    }
+    tbody td {
+        padding: 11px 14px;
+        border-bottom: 1px solid #eee;
+    }
+    tbody tr:nth-child(even) { background: #f8f9ff; }
+    tbody tr:hover { background: #eef0ff; }
+
+    .badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .badge.clean { background:#e8f5e9; color:#2e7d32; }
+    .badge.flagged { background:#ffebee; color:#c62828; }
+    .badge.pass { background:#e8f5e9; color:#2e7d32; }
+    .badge.fail { background:#fff3e0; color:#e65100; }
+
+    .empty-state {
+        text-align:center;
+        color:#888;
+        padding: 50px 20px;
+        font-size: 1.05em;
+    }
+
+    .subjects-pill {
+        display:inline-block;
+        background:#e8ecff;
+        color:#4a55b3;
+        padding:3px 10px;
+        border-radius:12px;
+        font-size:0.8em;
+        margin:2px 3px 2px 0;
+    }
+
+    .stats-row {
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        margin-bottom: 25px;
+    }
+    .stat-card {
+        flex:1;
+        min-width:150px;
+        background:#f8f9ff;
+        border-radius:12px;
+        padding:18px;
+        text-align:center;
+    }
+    .stat-card .num { font-size:1.8em; font-weight:bold; color:#667eea; }
+    .stat-card .label { font-size:0.85em; color:#666; margin-top:4px; }
+
+    .note {
+        font-size: 0.85em;
+        color: #888;
+        margin-top: 25px;
+        line-height: 1.6;
+        background: #fffbea;
+        border: 1px solid #ffe08a;
+        padding: 14px 18px;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+        .toolbar { flex-direction: column; align-items: stretch; }
+        .toolbar .field { width: 100%; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📊 Student Exam Database</h1>
+        <p style="margin-bottom:10px;">All attempts recorded from the MCQ Exam Portal</p>
+        <a class="back-link" href="MCQ_EXAM_Portal_Secure.html">← Back to Exam Portal</a>
+    </div>
+
+    <div class="content">
+        <div class="stats-row" id="statsRow"></div>
+
+        <div class="toolbar">
+            <div class="field">
+                <label>Search Name / ID</label>
+                <input type="text" id="searchBox" placeholder="Type to search..." oninput="renderAll()">
+            </div>
+            <div class="field">
+                <label>Filter by Subject</label>
+                <select id="subjectFilter" onchange="renderAll()">
+                    <option value="">All Subjects</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Filter by Date</label>
+                <input type="date" id="dateFilter" onchange="renderAll()">
+            </div>
+            <div class="field">
+                <label>&nbsp;</label>
+                <button class="btn secondary" onclick="clearFilters()">Clear Filters</button>
+            </div>
+            <div class="field" style="margin-left:auto;">
+                <label>&nbsp;</label>
+                <div style="display:flex; gap:10px;">
+                    <button class="btn secondary" onclick="exportCSV()">⬇ Export CSV</button>
+                    <button class="btn secondary" onclick="refreshData()">🔄 Refresh</button>
+                    <button class="btn danger" onclick="clearAllData()">🗑 Clear All</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">👤 Student Summary</h2>
+        <div class="table-wrap">
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Exams Completed</th>
+                        <th>Subjects Completed</th>
+                        <th>Average %</th>
+                        <th>Last Exam Date</th>
+                    </tr>
+                </thead>
+                <tbody id="summaryBody"></tbody>
+            </table>
+        </div>
+        <div class="empty-state" id="summaryEmpty" style="display:none;">No student records yet. Records appear here after someone completes an exam.</div>
+
+        <h2 class="section-title">🗂 Detailed Exam Records</h2>
+        <div class="table-wrap">
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Score</th>
+                        <th>%</th>
+                        <th>Time</th>
+                        <th>Integrity</th>
+                    </tr>
+                </thead>
+                <tbody id="recordsBody"></tbody>
+            </table>
+        </div>
+        <div class="empty-state" id="recordsEmpty" style="display:none;">No exam attempts recorded yet.</div>
+
+        <div class="note">
+            <strong>Note:</strong> This database is stored locally in your browser (no server/backend), keyed to the folder these two HTML files are opened from. It works reliably when both pages are opened in the <em>same browser</em> as local files or hosted on a simple web server. Use <strong>Export CSV</strong> regularly to keep a permanent backup — clearing browser data will erase these records.
+        </div>
+    </div>
+</div>
+
+<script>
+    const DB_KEY = 'examDatabaseRecords';
+    let allRecords = [];
+
+    function loadRecords() {
+        try {
+            allRecords = JSON.parse(localStorage.getItem(DB_KEY)) || [];
+        } catch (e) {
+            allRecords = [];
+        }
+    }
+
+    function refreshData() {
+        loadRecords();
+        renderAll();
+    }
+
+    function clearFilters() {
+        document.getElementById('searchBox').value = '';
+        document.getElementById('subjectFilter').value = '';
+        document.getElementById('dateFilter').value = '';
+        renderAll();
+    }
+
+    function clearAllData() {
+        if (confirm('This will permanently delete ALL stored exam records from this browser. Continue?')) {
+            localStorage.removeItem(DB_KEY);
+            loadRecords();
+            renderAll();
+        }
+    }
+
+    function populateSubjectFilter() {
+        const select = document.getElementById('subjectFilter');
+        const current = select.value;
+        const subjects = [...new Set(allRecords.map(r => r.subject).filter(Boolean))].sort();
+        select.innerHTML = '<option value="">All Subjects</option>' +
+            subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+        select.value = current;
+    }
+
+    function getFiltered() {
+        const search = document.getElementById('searchBox').value.trim().toLowerCase();
+        const subject = document.getElementById('subjectFilter').value;
+        const date = document.getElementById('dateFilter').value;
+
+        return allRecords.filter(r => {
+            const matchesSearch = !search ||
+                (r.name && r.name.toLowerCase().includes(search)) ||
+                (r.studentId && r.studentId.toLowerCase().includes(search));
+            const matchesSubject = !subject || r.subject === subject;
+            const matchesDate = !date || r.date === date;
+            return matchesSearch && matchesSubject && matchesDate;
+        });
+    }
+
+    function renderStats() {
+        const totalStudents = new Set(allRecords.map(r => r.studentId)).size;
+        const totalExams = allRecords.length;
+        const totalSubjects = new Set(allRecords.map(r => r.subject).filter(Boolean)).size;
+        const flagged = allRecords.filter(r => r.integrity === 'Flagged').length;
+
+        document.getElementById('statsRow').innerHTML = `
+            <div class="stat-card"><div class="num">${totalStudents}</div><div class="label">Students</div></div>
+            <div class="stat-card"><div class="num">${totalExams}</div><div class="label">Exams Completed</div></div>
+            <div class="stat-card"><div class="num">${totalSubjects}</div><div class="label">Subjects Covered</div></div>
+            <div class="stat-card"><div class="num">${flagged}</div><div class="label">Flagged Attempts</div></div>
+        `;
+    }
+
+    function renderSummary(filtered) {
+        const byStudent = {};
+        filtered.forEach(r => {
+            if (!byStudent[r.studentId]) {
+                byStudent[r.studentId] = { name: r.name, studentId: r.studentId, subjects: new Set(), count: 0, totalPct: 0, lastDate: r.date };
+            }
+            const s = byStudent[r.studentId];
+            s.count++;
+            s.totalPct += (r.percentage || 0);
+            if (r.subject) s.subjects.add(r.subject);
+            if (!s.lastDate || r.date > s.lastDate) s.lastDate = r.date;
+            s.name = r.name || s.name;
+        });
+
+        const rows = Object.values(byStudent).sort((a, b) => b.count - a.count);
+        const body = document.getElementById('summaryBody');
+
+        if (rows.length === 0) {
+            body.innerHTML = '';
+            document.getElementById('summaryEmpty').style.display = 'block';
+            return;
+        }
+        document.getElementById('summaryEmpty').style.display = 'none';
+
+        body.innerHTML = rows.map(s => `
+            <tr>
+                <td><strong>${escapeHtml(s.studentId)}</strong></td>
+                <td>${escapeHtml(s.name)}</td>
+                <td>${s.count}</td>
+                <td>${[...s.subjects].map(sub => `<span class="subjects-pill">${escapeHtml(sub)}</span>`).join('')}</td>
+                <td>${(s.totalPct / s.count).toFixed(2)}%</td>
+                <td>${formatDate(s.lastDate)}</td>
+            </tr>
+        `).join('');
+    }
+
+    function renderRecords(filtered) {
+        const body = document.getElementById('recordsBody');
+        const sorted = [...filtered].sort((a, b) => (b.submittedAt || '').localeCompare(a.submittedAt || ''));
+
+        if (sorted.length === 0) {
+            body.innerHTML = '';
+            document.getElementById('recordsEmpty').style.display = 'block';
+            return;
+        }
+        document.getElementById('recordsEmpty').style.display = 'none';
+
+        body.innerHTML = sorted.map((r, i) => `
+            <tr>
+                <td>${i + 1}</td>
+                <td><strong>${escapeHtml(r.studentId)}</strong></td>
+                <td>${escapeHtml(r.name)}</td>
+                <td>${escapeHtml(r.subject || '-')}</td>
+                <td>${formatDate(r.date)}</td>
+                <td>${r.correct}/${r.total}</td>
+                <td>${r.percentage != null ? r.percentage.toFixed(2) + '%' : '-'}</td>
+                <td>${escapeHtml(r.timeTaken || '-')}</td>
+                <td><span class="badge ${r.integrity === 'Flagged' ? 'flagged' : 'clean'}">${r.integrity || 'Clean'}${r.terminated ? ' (auto)' : ''}</span></td>
+            </tr>
+        `).join('');
+    }
+
+    function renderAll() {
+        const filtered = getFiltered();
+        populateSubjectFilter();
+        renderStats();
+        renderSummary(filtered);
+        renderRecords(filtered);
+    }
+
+    function formatDate(iso) {
+        if (!iso) return '-';
+        const [y, m, d] = iso.split('-');
+        return `${d}/${m}/${y}`;
+    }
+
+    function escapeHtml(str) {
+        if (str === undefined || str === null) return '';
+        return String(str)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function exportCSV() {
+        const filtered = getFiltered();
+        if (filtered.length === 0) {
+            alert('No records to export.');
+            return;
+        }
+        const headers = ['Student ID', 'Name', 'Subject', 'Date', 'Correct', 'Total', 'Percentage', 'Time Taken', 'Integrity', 'Auto-Terminated'];
+        const rows = filtered.map(r => [
+            r.studentId, r.name, r.subject, r.date, r.correct, r.total,
+            r.percentage != null ? r.percentage.toFixed(2) : '', r.timeTaken,
+            r.integrity, r.terminated ? 'Yes' : 'No'
+        ]);
+        const csv = [headers, ...rows]
+            .map(row => row.map(cell => `"${String(cell ?? '').replace(/"/g, '""')}"`).join(','))
+            .join('\n');
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `exam_records_${new Date().toISOString().split('T')[0]}.csv`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    // init
+    loadRecords();
+    renderAll();
+</script>
+</body>
+</html>

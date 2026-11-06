@@ -1,0 +1,2 @@
+path/to/large-file filter=lfs diff=lfs merge=lfs -text
+exam[[:space:]]browser.exe filter=lfs diff=lfs merge=lfs -text

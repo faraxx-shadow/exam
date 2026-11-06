@@ -1,0 +1,121 @@
+Question,Option A,Option B,Option C,Option D,Correct Option
+What does HTML stand for?,Hyper Text Markup Language,Home Tool Markup Language,Hyperlinks and Text Markup Language,High Tool Machine Language,A
+Which HTML tag is used to define an internal stylesheet?,<style>,<css>,<script>,<link>,A
+What is the correct HTML element for the largest heading?,<h1>,<h6>,<header>,<head>,A
+Which attribute specifies an alternate text for an image?,alt,title,src,href,A
+Which HTML tag is used to define a table row?,<tr>,<td>,<table>,<row>,A
+Which HTML element is used to specify a footer for a document or section?,<footer>,<section>,<div>,<bottom>,A
+What is the correct HTML element to define important text?,<strong>,<i>,<em>,<important>,A
+Which HTML element is used to define navigation links?,<nav>,<menu>,<ul>,<div>,A
+What is the correct way to include JavaScript in HTML?,"<script src=""file.js""></script>","<javascript src=""file.js""></javascript>","<js src=""file.js""></js>","<script href=""file.js""></script>",A
+What is the purpose of the <canvas> element in HTML5?,For graphics drawing,For data storage,For page navigation,For linking external files,A
+What does the <video> tag in HTML5 do?,Embeds a video in a document,Embeds audio in a document,Embeds a YouTube video,Embeds a streaming video,A
+What does the <section> element represent in HTML5?,A thematic grouping of content,A generic container for content,An inline-level element,A structural grouping element,A
+Which attribute is used to specify the character encoding in HTML5?,charset,encoding,code,setcode,A
+Which HTML5 element is used to create a container for graphics?,<canvas>,<svg>,<graphics>,<div>,A
+What is the correct HTML5 syntax for declaring a document type?,<!DOCTYPE html>,<DOCTYPE html>,<!DOCTYPE HTML5>,<!DOCTYPE html PUBLIC>,A
+Which input type in HTML5 is used to select a number?,number,range,integer,quantity,A
+How do you specify a placeholder in an input field?,placeholder,placehold,text,alt,A
+What does the <figure> tag represent in HTML5?,A self-contained content,A heading element,A list element,An inline element,A
+Which HTML5 element is used for embedding a sound file?,<audio>,<sound>,<music>,<media>,A
+Which HTML5 element is used to mark up navigational links?,<nav>,<ul>,<menu>,<div>,A
+What is the purpose of the <mark> tag in HTML5?,Highlight text,Define a note,Mark important sections,Add a comment,A
+Which HTML5 attribute specifies that an input field must be filled out?,required,validate,placeholder,pattern,A
+Which tag is used for inserting a line break in HTML5?,<br>,<lb>,<break>,<line>,A
+What does the <progress> element in HTML5 represent?,Progress of a task,Completion percentage,A loading bar,Current status,A
+Which HTML5 element is used to group together related form elements?,<fieldset>,<group>,<formgroup>,<related>,A
+What does HTML stand for?,Hyper Text Markup Language,Home Tool Markup Language,Hyperlinks and Text Markup Language,High Tool Machine Language,A
+Which HTML tag is used to define an internal stylesheet?,<style>,<css>,<script>,<link>,A
+What is the correct HTML element for the largest heading?,<h1>,<h6>,<header>,<head>,A
+Which attribute specifies an alternate text for an image?,alt,title,src,href,A
+Which HTML tag is used to define a table row?,<tr>,<td>,<table>,<row>,A
+Which HTML element is used to specify a footer for a document or section?,<footer>,<section>,<div>,<bottom>,A
+What is the correct HTML element to define important text?,<strong>,<i>,<em>,<important>,A
+Which HTML element is used to define navigation links?,<nav>,<menu>,<ul>,<div>,A
+What is the correct way to include JavaScript in HTML?,"<script src=""file.js""></script>","<javascript src=""file.js""></javascript>","<js src=""file.js""></js>","<script href=""file.js""></script>",A
+What is the purpose of the <canvas> element in HTML5?,For graphics drawing,For data storage,For page navigation,For linking external files,A
+What does the <video> tag in HTML5 do?,Embeds a video in a document,Embeds audio in a document,Embeds a YouTube video,Embeds a streaming video,A
+What does the <section> element represent in HTML5?,A thematic grouping of content,A generic container for content,An inline-level element,A structural grouping element,A
+Which attribute is used to specify the character encoding in HTML5?,charset,encoding,code,setcode,A
+Which HTML5 element is used to create a container for graphics?,<canvas>,<svg>,<graphics>,<div>,A
+What is the correct HTML5 syntax for declaring a document type?,<!DOCTYPE html>,<DOCTYPE html>,<!DOCTYPE HTML5>,<!DOCTYPE html PUBLIC>,A
+Which input type in HTML5 is used to select a number?,number,range,integer,quantity,A
+How do you specify a placeholder in an input field?,placeholder,placehold,text,alt,A
+What does the <figure> tag represent in HTML5?,A self-contained content,A heading element,A list element,An inline element,A
+Which HTML5 element is used for embedding a sound file?,<audio>,<sound>,<music>,<media>,A
+Which HTML5 element is used to mark up navigational links?,<nav>,<ul>,<menu>,<div>,A
+What is the purpose of the <mark> tag in HTML5?,Highlight text,Define a note,Mark important sections,Add a comment,A
+Which HTML5 attribute specifies that an input field must be filled out?,required,validate,placeholder,pattern,A
+Which tag is used for inserting a line break in HTML5?,<br>,<lb>,<break>,<line>,A
+What does the <progress> element in HTML5 represent?,Progress of a task,Completion percentage,A loading bar,Current status,A
+Which HTML5 element is used to group together related form elements?,<fieldset>,<group>,<formgroup>,<related>,A
+What does HTML stand for?,Hyper Text Markup Language,Home Tool Markup Language,Hyperlinks and Text Markup Language,High Tool Machine Language,A
+Which HTML tag is used to define an internal stylesheet?,<style>,<css>,<script>,<link>,A
+What is the correct HTML element for the largest heading?,<h1>,<h6>,<header>,<head>,A
+Which attribute specifies an alternate text for an image?,alt,title,src,href,A
+Which HTML tag is used to define a table row?,<tr>,<td>,<table>,<row>,A
+Which HTML element is used to specify a footer for a document or section?,<footer>,<section>,<div>,<bottom>,A
+What is the correct HTML element to define important text?,<strong>,<i>,<em>,<important>,A
+Which HTML element is used to define navigation links?,<nav>,<menu>,<ul>,<div>,A
+What is the correct way to include JavaScript in HTML?,"<script src=""file.js""></script>","<javascript src=""file.js""></javascript>","<js src=""file.js""></js>","<script href=""file.js""></script>",A
+What is the purpose of the <canvas> element in HTML5?,For graphics drawing,For data storage,For page navigation,For linking external files,A
+What does the <video> tag in HTML5 do?,Embeds a video in a document,Embeds audio in a document,Embeds a YouTube video,Embeds a streaming video,A
+What does the <section> element represent in HTML5?,A thematic grouping of content,A generic container for content,An inline-level element,A structural grouping element,A
+Which attribute is used to specify the character encoding in HTML5?,charset,encoding,code,setcode,A
+Which HTML5 element is used to create a container for graphics?,<canvas>,<svg>,<graphics>,<div>,A
+What is the correct HTML5 syntax for declaring a document type?,<!DOCTYPE html>,<DOCTYPE html>,<!DOCTYPE HTML5>,<!DOCTYPE html PUBLIC>,A
+Which input type in HTML5 is used to select a number?,number,range,integer,quantity,A
+How do you specify a placeholder in an input field?,placeholder,placehold,text,alt,A
+What does the <figure> tag represent in HTML5?,A self-contained content,A heading element,A list element,An inline element,A
+Which HTML5 element is used for embedding a sound file?,<audio>,<sound>,<music>,<media>,A
+Which HTML5 element is used to mark up navigational links?,<nav>,<ul>,<menu>,<div>,A
+What is the purpose of the <mark> tag in HTML5?,Highlight text,Define a note,Mark important sections,Add a comment,A
+Which HTML5 attribute specifies that an input field must be filled out?,required,validate,placeholder,pattern,A
+Which tag is used for inserting a line break in HTML5?,<br>,<lb>,<break>,<line>,A
+What does the <progress> element in HTML5 represent?,Progress of a task,Completion percentage,A loading bar,Current status,A
+Which HTML5 element is used to group together related form elements?,<fieldset>,<group>,<formgroup>,<related>,A
+What does HTML stand for?,Hyper Text Markup Language,Home Tool Markup Language,Hyperlinks and Text Markup Language,High Tool Machine Language,A
+Which HTML tag is used to define an internal stylesheet?,<style>,<css>,<script>,<link>,A
+What is the correct HTML element for the largest heading?,<h1>,<h6>,<header>,<head>,A
+Which attribute specifies an alternate text for an image?,alt,title,src,href,A
+Which HTML tag is used to define a table row?,<tr>,<td>,<table>,<row>,A
+Which HTML element is used to specify a footer for a document or section?,<footer>,<section>,<div>,<bottom>,A
+What is the correct HTML element to define important text?,<strong>,<i>,<em>,<important>,A
+Which HTML element is used to define navigation links?,<nav>,<menu>,<ul>,<div>,A
+What is the correct way to include JavaScript in HTML?,"<script src=""file.js""></script>","<javascript src=""file.js""></javascript>","<js src=""file.js""></js>","<script href=""file.js""></script>",A
+What is the purpose of the <canvas> element in HTML5?,For graphics drawing,For data storage,For page navigation,For linking external files,A
+What does the <video> tag in HTML5 do?,Embeds a video in a document,Embeds audio in a document,Embeds a YouTube video,Embeds a streaming video,A
+What does the <section> element represent in HTML5?,A thematic grouping of content,A generic container for content,An inline-level element,A structural grouping element,A
+Which attribute is used to specify the character encoding in HTML5?,charset,encoding,code,setcode,A
+Which HTML5 element is used to create a container for graphics?,<canvas>,<svg>,<graphics>,<div>,A
+What is the correct HTML5 syntax for declaring a document type?,<!DOCTYPE html>,<DOCTYPE html>,<!DOCTYPE HTML5>,<!DOCTYPE html PUBLIC>,A
+Which input type in HTML5 is used to select a number?,number,range,integer,quantity,A
+How do you specify a placeholder in an input field?,placeholder,placehold,text,alt,A
+What does the <figure> tag represent in HTML5?,A self-contained content,A heading element,A list element,An inline element,A
+Which HTML5 element is used for embedding a sound file?,<audio>,<sound>,<music>,<media>,A
+Which HTML5 element is used to mark up navigational links?,<nav>,<ul>,<menu>,<div>,A
+What is the purpose of the <mark> tag in HTML5?,Highlight text,Define a note,Mark important sections,Add a comment,A
+Which HTML5 attribute specifies that an input field must be filled out?,required,validate,placeholder,pattern,A
+Which tag is used for inserting a line break in HTML5?,<br>,<lb>,<break>,<line>,A
+What does the <progress> element in HTML5 represent?,Progress of a task,Completion percentage,A loading bar,Current status,A
+Which HTML5 element is used to group together related form elements?,<fieldset>,<group>,<formgroup>,<related>,A
+What does HTML stand for?,Hyper Text Markup Language,Home Tool Markup Language,Hyperlinks and Text Markup Language,High Tool Machine Language,A
+Which HTML tag is used to define an internal stylesheet?,<style>,<css>,<script>,<link>,A
+What is the correct HTML element for the largest heading?,<h1>,<h6>,<header>,<head>,A
+Which attribute specifies an alternate text for an image?,alt,title,src,href,A
+Which HTML tag is used to define a table row?,<tr>,<td>,<table>,<row>,A
+Which HTML element is used to specify a footer for a document or section?,<footer>,<section>,<div>,<bottom>,A
+What is the correct HTML element to define important text?,<strong>,<i>,<em>,<important>,A
+Which HTML element is used to define navigation links?,<nav>,<menu>,<ul>,<div>,A
+What is the correct way to include JavaScript in HTML?,"<script src=""file.js""></script>","<javascript src=""file.js""></javascript>","<js src=""file.js""></js>","<script href=""file.js""></script>",A
+What is the purpose of the <canvas> element in HTML5?,For graphics drawing,For data storage,For page navigation,For linking external files,A
+What does the <video> tag in HTML5 do?,Embeds a video in a document,Embeds audio in a document,Embeds a YouTube video,Embeds a streaming video,A
+What does the <section> element represent in HTML5?,A thematic grouping of content,A generic container for content,An inline-level element,A structural grouping element,A
+Which attribute is used to specify the character encoding in HTML5?,charset,encoding,code,setcode,A
+Which HTML5 element is used to create a container for graphics?,<canvas>,<svg>,<graphics>,<div>,A
+What is the correct HTML5 syntax for declaring a document type?,<!DOCTYPE html>,<DOCTYPE html>,<!DOCTYPE HTML5>,<!DOCTYPE html PUBLIC>,A
+Which input type in HTML5 is used to select a number?,number,range,integer,quantity,A
+How do you specify a placeholder in an input field?,placeholder,placehold,text,alt,A
+What does the <figure> tag represent in HTML5?,A self-contained content,A heading element,A list element,An inline element,A
+Which HTML5 element is used for embedding a sound file?,<audio>,<sound>,<music>,<media>,A
+Which HTML5 element is used to mark up navigational links?,<nav>,<ul>,<menu>,<div>,A

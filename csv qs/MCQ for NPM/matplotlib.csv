@@ -1,0 +1,68 @@
+What is Matplotlib?,A plotting library for Python,An IDE for Python,A database library,A machine learning framework,A
+Which function is used to plot a line graph in Matplotlib?,plt.plot(),plt.line(),plt.graph(),plt.draw(),A
+What is the default backend for Matplotlib?,Agg,Qt5Agg,TkAgg,GTK3Agg,B
+How do you display a plot in Matplotlib?,plt.show(),plt.display(),plt.render(),plt.plot_display(),A
+Which module is commonly imported with Matplotlib?,numpy,math,sympy,sci,A
+What is the command to save a plot as an image?,plt.savefig(),plt.saveplot(),plt.saveimage(),plt.writeplot(),A
+Which method sets the title of a plot?,plt.title(),plt.header(),plt.nameplot(),plt.graph_title(),A
+Which parameter changes the color of a line in plt.plot()?,color,shade,hue,style,A
+What is the default color of lines in Matplotlib?,blue,red,black,green,C
+How do you add grid lines to a plot?,plt.grid(True),plt.grid(False),plt.addgrid(True),plt.showgrid(True),A
+Which file formats can Matplotlib export plots to?,PNG,PDF,SVG,All of the above,D
+How do you set the x-axis label in a Matplotlib plot?,plt.xlabel(),plt.xaxis_label(),plt.label_x(),plt.axislabel('x'),A
+What is a subplot in Matplotlib?,A small plot inside another plot,A grid of multiple plots,An interactive plot,A type of plot used in 3D graphics,B
+Which function creates a subplot?,plt.subplot(),plt.gridplot(),plt.subgraph(),plt.grid(),A
+What is the default line style in Matplotlib?,Solid,Dashed,Dotted,Dash-dot,A
+Which argument changes the marker style in plt.plot()?,marker,pointstyle,symbol,shape,A
+Which library is required for 3D plotting in Matplotlib?,mpl_toolkits,matplotlib_3d,matplotlib_extra,matplotlib_3D_tools,A
+How do you create a bar plot in Matplotlib?,plt.bar(),plt.barplot(),plt.histbar(),plt.plotbar(),A
+Which method is used for creating histograms?,plt.hist(),plt.bars(),plt.histogram(),plt.showhist(),A
+What does plt.scatter() create?,A scatter plot,A line graph,A bar graph,A histogram,A
+How do you log scale an axis in Matplotlib?,plt.xscale('log'),plt.log('x'),plt.scale(x='log'),plt.log_axis('x'),A
+Which command in Matplotlib changes the figure size?,plt.figure(figsize=(width, height)),plt.set_figure(size=(width, height)),A
+What is the command to clear the current plot?,plt.clf(),plt.clear(),plt.cleanplot(),plt.reset(),A
+Which function is used to create a pie chart in Matplotlib?,plt.pie(),plt.piechart(),plt.plotpie(),plt.circularplot(),A
+Which property controls the transparency of a plot?,alpha,opacity,transparency,shade,A
+What is the default dpi (dots per inch) of Matplotlib figures?,100,72,300,150,A
+Which argument changes the line width in plt.plot()?,linewidth,lineweight,linethickness,linestyle,A
+How do you add a legend to a Matplotlib plot?,plt.legend(),plt.add_legend(),plt.legendplot(),plt.show_legend(),A
+What does plt.tight_layout() do?,Adjusts subplots to fit in the figure,Changes the figure layout,Makes plots tighter,Compresses the plot,A
+Which function displays the current plot?,plt.show(),plt.render(),plt.display(),plt.draw(),A
+What does plt.gca() return?,Current axes,Global canvas,Axis object,Current figure,A
+How do you create a figure in Matplotlib?,plt.figure(),plt.create_figure(),plt.init_figure(),plt.new(),A
+What does plt.subplots() return?,A figure and axes,Only axes,Only figure,None of the above,A
+Which method adjusts the aspect ratio of a plot?,plt.axis('equal'),plt.ratio('adjust'),plt.aspect('equal'),plt.equalize(),A
+What is the default figure size in Matplotlib?,6x4 inches,8x6 inches,5x5 inches,10x7 inches,A
+Which function draws a vertical line on the plot?,plt.axvline(),plt.vline(),plt.line(),plt.vaxisline(),A
+Which argument changes the font size in plt.title()?,fontsize,font,fontweight,size,A
+How do you add labels to data points in plt.scatter()?,Annotate(),plt.add_labels(),plt.scatter_labels(),label_data(),A
+What does plt.errorbar() do?,Plots error bars,Plots a bar graph,Creates a histogram,Plots scatter points,A
+Which argument in plt.plot() sets the label for a legend?,label,legend,legend_label,graph_label,A
+How do you plot multiple lines in one figure?,Call plt.plot() multiple times,Use plt.multi_plot(),Use a loop,None of the above,A
+What is the purpose of plt.xlim()?,Set x-axis limits,Set x-axis label,Set x-axis ticks,Set x-axis style,A
+Which module in Matplotlib is used for 3D plotting?,mpl_toolkits.mplot3d,matplotlib_3d,matplotlib.tools,matplotlib.plugins,A
+How do you set a logarithmic scale for the y-axis?,plt.yscale('log'),plt.logscale('y'),plt.scale_ylog(),plt.ylog(),A
+Which parameter in plt.hist() sets the number of bins?,bins,hist_bins,num_bins,bar_bins,A
+What does the cmap argument do in Matplotlib?,Sets the colormap,Adjusts the plot color,Changes the figure theme,Sets line color,A
+How do you fill the area under a curve in a plot?,plt.fill_between(),plt.fill_area(),plt.area_fill(),plt.curve_fill(),A
+What does plt.stem() create?,A stem plot,A line plot,A scatter plot,A bar plot,A
+Which argument in plt.pie() highlights a slice?,explode,highlight,slice,pull_out,A
+How do you set the tick marks on the x-axis?,plt.xticks(),plt.x_ticks(),plt.ticks('x'),plt.axis_ticks('x'),A
+What does plt.imshow() do?,Displays an image,Creates a heatmap,Displays text,Shows a scatter plot,A
+How do you invert the y-axis in a plot?,plt.gca().invert_yaxis(),plt.yinvert(),plt.invert_axis('y'),plt.yaxis_invert(),A
+What does plt.cm represent in Matplotlib?,Colormap module,Color module,Canvas module,Core module,A
+Which argument in plt.plot() changes the line style?,linestyle,style,line,linepattern,A
+How do you create a twin x-axis in Matplotlib?,plt.twinx(),plt.xaxis(),plt.twins('x'),plt.duplicate_axis(),A
+What does plt.grid() with argument axis='y' do?,Adds grid lines on y-axis,Removes x-axis grid,Adds grid lines to both axes,Removes y-axis grid,A
+How do you adjust the spacing between subplots?,plt.subplots_adjust(),plt.adjust_spacings(),plt.subplot_space(),plt.spacing(),A
+What is the purpose of plt.colorbar()?,Adds a color legend,Changes bar color,Adjusts plot contrast,Sets plot background,A
+What does plt.step() create?,A step plot,A bar plot,A scatter plot,A histogram,A
+How do you set axis labels using Axes object?,ax.set_xlabel(),ax.xlabel(),ax.axis_label(),ax.set_label('x'),A
+What does the alpha parameter control in plt.scatter()?,Transparency,Marker size,Color,Legend visibility,A
+Which function clears an axis?,ax.cla(),ax.clear(),ax.clear_axis(),ax.remove(),A
+How do you set a title using the Axes object?,ax.set_title(),ax.title(),ax.plot_title(),ax.add_title(),A
+What does plt.boxplot() create?,A box-and-whisker plot,A scatter plot,A histogram,A bar graph,A
+How do you change the axis ticks format?,Use a formatter,Use tickstyle,Use tick_labels,Use tick_template,A
+What is plt.subplots() used for?,Creating multiple plots in one figure,Adding grid lines,Adjusting subplot size,Plotting a single graph,A
+Which function adjusts the figure layout for overlapping labels?,plt.tight_layout(),plt.adjust_labels(),plt.figure_layout(),plt.resize(),A
+What does the argument sharex=True do in plt.subplots()?,Shares x-axis among subplots,Merges all x-axes,Sets a global x-axis,Removes x-axis ticks,A

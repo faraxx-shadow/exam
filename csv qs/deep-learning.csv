@@ -1,0 +1,61 @@
+﻿Question,Option A,Option B,Option C,Option D,Correct Answer,Explanation
+What type of machine learning task is the Dogs vs Cats project?,Object detection with bounding boxes,Binary image classification,Regression,Clustering,B,The model assigns each image to one of two classes: cat or dog.
+Which neural network type is most effective for image classification?,Convolutional Neural Network,Autoencoder,Radial Basis Function Network,Recurrent Neural Network,A,CNNs exploit spatial structure using convolutional filters.
+Which dataset is commonly used for the Dogs vs Cats project?,CIFAR-100,MNIST,IMDB Reviews,Kaggle Dogs vs Cats,D,The Kaggle Dogs vs Cats dataset contains labeled cat and dog photos.
+Which library is used to build the CNN in this project?,BeautifulSoup,Flask,TensorFlow/Keras,Scrapy,C,"TensorFlow with Keras provides layers, models and training tools."
+Which tool is commonly used to visualize a confusion matrix as a heatmap?,NLTK,Seaborn,Pillow,Scikit-image only,B,seaborn.heatmap is widely used for confusion matrices.
+Why must all input images be resized to the same size?,To convert them to grayscale,To increase the number of classes,To make files smaller on disk,The network needs a fixed input shape,D,Dense layers and batching require a fixed input shape.
+What does normalizing pixel values by dividing by 255 do?,Converts images to black and white,Doubles image resolution,Removes noise,Scales values to the range 0-1,D,"Pixels range 0-255; dividing by 255 gives 0-1, helping training stability."
+A typical RGB input image of 150x150 has which shape?,"(3, 150)","(150, 150)","(150, 150, 3)","(150, 150, 1)",C,Height x width x 3 color channels.
+How many channels does a grayscale image have?,2,3,1,4,C,Grayscale has a single intensity channel.
+What is the main role of a convolutional layer?,Extract local features using filters,Normalize labels,Compute the final probability,Randomly drop neurons,A,"Filters slide across the image to detect edges, textures and patterns."
+Early convolutional layers usually learn which features?,Loss values,Whole animal faces,Edges and simple textures,Class labels,C,Low-level features appear first; deeper layers combine them.
+Which activation function is most commonly used in hidden CNN layers?,Linear only,Step function,Softmax,ReLU,D,"ReLU is simple, fast and reduces vanishing gradients."
+What does ReLU output for a negative input?,-1,0,The negative value,1,B,"ReLU(x) = max(0, x)."
+What is the purpose of a max pooling layer?,Downsample feature maps and keep strongest activations,Apply dropout,Increase image size,Add labels,A,Pooling reduces spatial size and computation and adds slight translation invariance.
+A 2x2 max pooling layer applied to a 64x64 feature map gives what size?,32x32,128x128,16x16,64x64,A,Stride 2 halves each spatial dimension.
+What does the Flatten layer do?,Converts multi-dimensional feature maps into a 1D vector,Removes the last layer,Normalizes pixels,Resizes images,A,It prepares the data for Dense layers.
+What is the role of a Dense (fully connected) layer in a CNN classifier?,Extract edges,Load the dataset,Combine features to make classification decisions,Resize images,C,Dense layers map extracted features to outputs.
+Which output activation suits binary classification with one output neuron?,Softmax with 1 unit,Sigmoid,ReLU,Tanh,B,Sigmoid outputs a probability between 0 and 1.
+Which loss function is standard for binary classification with a sigmoid output?,Categorical cross-entropy with 10 classes,Mean squared error,Hinge loss for regression,Binary cross-entropy,D,Binary cross-entropy measures error between predicted probability and 0/1 labels.
+"If you use two output neurons with softmax and one-hot labels, which loss fits?",Huber loss,Mean absolute error,Binary accuracy,Categorical cross-entropy,D,Categorical cross-entropy is used for one-hot multi-class labels.
+Which optimizer is widely used for training this CNN?,Adam,PCA,K-Means,Apriori,A,Adam adapts learning rates and converges quickly.
+What does the learning rate control?,Size of weight update steps,Number of layers,Number of classes,Image size,A,It scales how much weights change per update.
+What is an epoch?,One filter,One full pass through the training dataset,One layer,One batch of data,B,An epoch means every training sample is seen once.
+What is batch size?,Number of filters,Number of samples processed before a weight update,Number of classes,Number of epochs,B,The batch size sets how many samples contribute to each gradient step.
+Which metric is most intuitive for a balanced Dogs vs Cats dataset?,R-squared,Accuracy,Mean squared error,Perplexity,B,"With balanced classes, accuracy is a meaningful metric."
+"Why is the dataset split into training, validation and test sets?",To reduce image size,"To train, tune and fairly evaluate the model",To change labels,To make the dataset bigger,B,Validation guides tuning; test gives an unbiased final estimate.
+What is overfitting?,Model performs well on training data but poorly on unseen data,Model performs poorly on all data,Model has too few parameters,Model trains too fast,A,The model memorizes training data instead of generalizing.
+Which pattern in curves indicates overfitting?,"Training accuracy high, validation accuracy much lower",Both accuracies low,Both losses equal,Validation accuracy higher than training always,A,A growing gap between train and validation performance signals overfitting.
+What is underfitting?,Model has perfect accuracy,Model memorizes noise,Dataset is too large,Model is too simple to capture patterns,D,Underfit models perform poorly on both training and validation data.
+What does a Dropout layer do?,Removes images from the dataset,Randomly disables neurons during training,Deletes filters permanently,Resizes feature maps,B,Dropout reduces co-adaptation and helps prevent overfitting.
+Dropout is active during which phase?,Neither,Inference only,Both equally,Training only,D,Keras disables dropout automatically at inference.
+What is data augmentation?,Creating modified versions of training images,Increasing image resolution permanently,Deleting noisy images,Adding more classes,A,"Flips, rotations and zooms increase data variety."
+Which is a valid augmentation for cat/dog images?,Removing channels,Replacing image with random noise,Random horizontal flip,Changing labels,C,A flipped cat is still a cat.
+Which Keras class was traditionally used to load and augment images from folders?,DataFrameScaler,FolderParser,ImageDataGenerator,LabelMaker,C,ImageDataGenerator with flow_from_directory is the classic approach.
+What does flow_from_directory expect?,A single CSV file,Only one image,One subfolder per class,A video file,C,"Subfolder names become class labels (e.g., cats/, dogs/)."
+Which modern Keras utility loads images from directories into tf.data datasets?,load_images_csv,tf.images.load,image_dataset_from_directory,read_image_folder,C,tf.keras.utils.image_dataset_from_directory builds a labeled dataset.
+Should data augmentation be applied to the test set?,"No, only to training data",Only to validation,"Yes, always",Only to labels,A,"Evaluation data should reflect real, unmodified inputs."
+What does the Conv2D parameter 'filters' specify?,Number of classes,Image width,Batch size,Number of output feature maps,D,Each filter produces one feature map.
+"What does kernel_size=(3,3) mean?",The filter is 3x3 pixels,Output has 3 channels,Three layers are used,Image is resized to 3x3,A,The kernel covers a 3x3 region at a time.
+What does padding='same' do?,Keeps output spatial size equal to input (with stride 1),Doubles the size,Adds labels,Removes borders,A,Zero padding preserves spatial dimensions.
+What is the effect of stride=2 in a convolution?,Output is downsampled,Number of filters doubles,Output is upsampled,Filters become 2x2,A,Larger stride skips positions and reduces output size.
+"How many parameters does Conv2D(32, (3,3)) have on a 3-channel input?",1024,288,896,320,C,(3*3*3 + 1 bias) * 32 = 896.
+What does model.summary() show?,Dataset labels,Final accuracy only,"Layers, output shapes and parameter counts",Training images,C,It lists each layer's shape and parameters.
+What does model.compile() configure?,Image size,Plot style,"Optimizer, loss and metrics",Dataset path,C,Compile sets how the model is trained and evaluated.
+Which method trains a Keras model?,fit(),train_all(),run(),predict_labels(),A,"model.fit trains using data, epochs and batch size."
+What does model.predict() return for a sigmoid output?,Image arrays,Class names,Epoch numbers,Probabilities between 0 and 1,D,Values near 1 or 0 indicate the class; a threshold (0.5) gives labels.
+"In a confusion matrix, what is a false positive here (dog=positive)?",Cat predicted as dog,Dog predicted as cat,Cat predicted as cat,Dog predicted as dog,A,A negative sample incorrectly labeled positive.
+What does precision measure?,(TP + TN) / total,TP / (TP + FP),TN / (TN + FP),TP / (TP + FN),B,Precision is the fraction of predicted positives that are correct.
+What does recall measure?,TP / (TP + FN),TP / (TP + FP),TN / total,FP / (FP + TN),A,Recall is the fraction of actual positives found.
+F1-score is the...,Harmonic mean of precision and recall,Average of loss values,Sum of TP and TN,Ratio of epochs to batches,A,It balances precision and recall.
+What is transfer learning?,Transferring files between folders,Copying the dataset,Training from random weights only,Reusing a model pretrained on a large dataset,D,"Pretrained features (e.g., ImageNet) are adapted to the new task."
+Which pretrained model is commonly used for Dogs vs Cats transfer learning?,GPT-2,BERT,Word2Vec,VGG16 / MobileNetV2,D,These ImageNet-trained CNNs transfer well to image tasks.
+What does freezing layers in transfer learning mean?,Layers use dropout only,Their weights are not updated during training,Training is paused permanently,Layers are deleted,B,Setting trainable=False keeps pretrained weights fixed.
+What is fine-tuning?,Removing all Dense layers,Changing the dataset,Training with a huge learning rate,Unfreezing some pretrained layers and training with a low learning rate,D,Fine-tuning adapts higher-level features gently.
+Which callback stops training when validation loss stops improving?,ModelCheckpoint,TensorBoard,CSVLogger,EarlyStopping,D,EarlyStopping halts training to avoid overfitting.
+Which callback saves the best model during training?,LambdaCallback only,History,EarlyStopping,ModelCheckpoint,D,ModelCheckpoint can save weights when monitored metric improves.
+Which function saves an entire Keras model to disk?,model.export_images(),model.dump_all(),model.store_csv(),model.save(),D,"model.save stores architecture, weights and optimizer state."
+Which function loads an already trained Keras model?,tf.keras.models.load_model(),np.load_model(),keras.read_net(),tf.load_images(),A,load_model restores a saved model for inference or further training.
+What does Batch Normalization do?,Normalizes layer activations to stabilize and speed up training,Resizes images,Selects the optimizer,Adds more data,A,It reduces internal covariate shift and often improves convergence.
+Which problem does the vanishing gradient problem describe?,Gradients become zero for all data,Images disappear,Gradients become extremely small in early layers,Loss becomes negative,C,Small gradients slow or stop learning in deep networks.

@@ -1,0 +1,60 @@
+What does the Pandas library primarily work with?,Images,Tabular data,Audio,Graphs,B
+Which method is used to create a DataFrame in Pandas?,pd.create(),pd.dataframe(),pd.DataFrame(),pd.frame(),C
+How do you import Pandas in Python?,import pandas,pandas as pd,import pandas as pd,pd import pandas,C
+What does 'NaN' represent in Pandas?,Number as Null,Not a Name,Not a Number,Name as Null,C
+Which function is used to read a CSV file in Pandas?,readfile(),read_csv(),read.csv(),load_csv(),B
+How do you get the first 5 rows of a DataFrame?,df.top(5),df.first(5),df.head(),df.show(5),C
+Which method is used to drop a column in a DataFrame?,drop_column(),drop(),remove(),delete(),B
+What does 'df.shape' return?,Number of rows and columns,Column names,Row values,Data types,A
+Which Pandas function is used to calculate the mean?,average(),mean(),calc_mean(),df.mean(),B
+How do you filter rows based on a condition in Pandas?,df.query(),df.loc[df['column'] > value],filter(df),df.select(df['column'] > value),B
+What is the default axis for the drop method?,axis=0,axis=1,axis=2,None,A
+Which method is used to concatenate two DataFrames?,concat(),merge(),join(),combine(),A
+What is the default sorting order in Pandas?,Ascending,Descending,Random,None,A
+How do you check for missing values in a DataFrame?,df.is_null(),df.check_missing(),df.isna(),df.null(),C
+Which method fills missing values in Pandas?,fill_missing(),fill_values(),fillna(),fill(),C
+What does 'iloc' stand for?,Index Locate,Index Location,Index Locator,Indexer,C
+Which function is used to merge two DataFrames in Pandas?,concat(),merge(),join(),combine(),B
+What does 'df.dtypes' return?,Data types of columns,DataFrame type,Column names,Row count,A
+Which method removes duplicate rows in a DataFrame?,remove_duplicates(),drop_duplicates(),delete_duplicates(),clear_duplicates(),B
+How do you reset an index in a DataFrame?,reset_index(),index.reset(),df.index_reset(),df.clear_index(),A
+What does 'df.describe()' provide?,Statistical summary,Row names,Column data types,Missing values,A
+Which of the following is a Panel in Pandas?,1D data,2D data,3D data,4D data,C
+How do you rename columns in a DataFrame?,df.rename(),df.columns.rename(),df.set_names(),df.rename_columns(),A
+What does 'df.columns' return?,Column data,Column index,Column names,Column types,C
+Which of these is used to write a DataFrame to an Excel file?,to_excel(),write_excel(),save_excel(),to_xlsx(),A
+What does 'df.info()' provide?,Column info,Row values,Memory usage,Complete summary,D
+Which function is used to read an Excel file in Pandas?,read_csv(),read_excel(),pd.read(),excel_read(),B
+How do you drop rows with NaN values?,drop(),drop_rows(),dropna(),remove_rows(),C
+Which method is used to apply a function to each row or column in Pandas?,apply(),map(),transform(),reduce(),A
+What does 'pd.concat()' do?,Concatenate DataFrames,Merge DataFrames,Join DataFrames,Combine DataFrames,A
+What is the purpose of Pandas Series?,To handle 2D data,To handle 1D data,To handle 3D data,To handle n-dimensional data,B
+Which of these is mutable in Pandas?,DataFrame,Series,Both,None,C
+How do you check the dimensions of a DataFrame?,df.size,df.dimensions,df.ndim,df.shape,C
+Which of the following is not a valid Pandas operation?,Concatenation,Merge,Sort,Cluster,D
+What does 'pd.Series()' create?,A DataFrame,A 2D array,A Series,A list,C
+How do you sort a DataFrame by values?,df.sort(),df.order(),df.sort_values(),df.arrange(),C
+What does 'axis=1' refer to in Pandas?,Rows,Columns,Both,None,B
+Which function converts a dictionary to a DataFrame?,pd.DataFrame(dict),pd.toDataFrame(dict),dict.to_df(),dict.DataFrame(),A
+How do you select specific columns in a DataFrame?,df[columns],df['column'],df.loc[columns],df.select[columns],B
+Which method calculates cumulative sum in a DataFrame?,df.cumsum(),df.sum_cum(),df.cum_sum(),df.sum(),A
+What does 'df.sample()' do?,Fetches a random sample,Fills missing values,Sorts rows,Removes duplicates,A
+How do you find unique values in a column?,df.unique(),df.column.unique(),df['column'].unique(),df.unique_column(),C
+What is the default index type in a DataFrame?,Integer,String,None,Custom,A
+Which method adds a new column to a DataFrame?,add_column(),df.new_column(),df['new_column'] = values,append_column(),C
+How do you transpose a DataFrame?,df.transpose(),df.T(),Both,None,C
+Which method is used to combine DataFrames with different indices?,merge(),concat(),join(),append(),C
+How do you check if a column exists in a DataFrame?,df.column_exists('name'),'name' in df.columns,df.has_column('name'),df.column.has('name'),B
+What does 'df.memory_usage()' return?,Column memory usage,Total memory usage,Row memory usage,All of the above,D
+Which of the following is not a file format supported by Pandas?,CSV,JSON,SQL,DOC,D
+How do you save a DataFrame as a CSV file?,df.to_csv('file.csv'),save_csv(df, 'file.csv'),pd.to_csv(df,A
+What does 'pd.read_sql()' do?,Reads SQL queries into DataFrames,Executes SQL commands,Converts SQL to DataFrames,None of the above,A
+What does 'df.empty' return if a DataFrame is empty?,TRUE,FALSE,None,Error,A
+Which method is used to create a pivot table in Pandas?,pivot_table(),pd.pivot(),create_pivot(),pivot.df(),A
+What does 'df.groupby()' do?,Groups data by columns,Groups rows by conditions,Groups data for aggregation,All of the above,C
+How do you add multiple rows to a DataFrame?,df.append(rows),df.concat([rows]),df.add_rows(rows),df.update(rows),B
+Which of the following is not a Pandas data structure?,Series,DataFrame,Panel,Matrix,D
+What does 'df.nunique()' return?,Count of unique rows,Count of unique columns,Count of unique values per column,Count of null values,C
+Which function provides a summary of null values in a DataFrame?,df.null_summary(),df.isna_summary(),df.isnull().sum(),df.check_null(),C
+What does 'df.corr()' calculate?,Correlation,Standard deviation,Mean,Median,A
+Which method is used to filter rows using a lambda function?,df.filter(),df.loc[lambda x],df.query(lambda x),df.filter(lambda x),B

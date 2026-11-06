@@ -1,0 +1,61 @@
+
+What is the correct file extension for Python files?,.py,.python,.pt,.pyt,A
+Which keyword is used to define a function?,function,def,fun,define,B
+What is output of print(5+2*3)?,21,11,16,10,B
+Which data type is immutable?,List,Dictionary,Set,Tuple,D
+What is output of print(type(5))?,int,str,float,bool,A
+Which operator is used for exponentiation?,^,**,%,//,B
+What is output of print(10//3)?,3.33,3,4,2,B
+Which function takes user input?,input(),read(),scan(),get(),A
+What is output of print("Hello"*2)?,HelloHello,Hello 2,Error,2Hello,A
+Which keyword is used for conditional statement?,if,when,check,case,A
+What is output of print(4==4)?,True,False,None,Error,A
+Which method adds element to list?,add(),append(),push(),insert(),B
+Which keyword is used for loop?,loop,for,iterate,repeat,B
+What is output of print(len("Python"))?,5,6,7,4,B
+Which operator checks equality?,=,==,!=,<>,B
+What is output of bool(0)?,True,False,None,Error,B
+Which collection does not allow duplicates?,List,Tuple,Set,Dictionary,C
+What is output of print(9%2)?,1,2,3,0,A
+Which keyword is used to break loop?,exit,break,stop,end,B
+What is output of print(type("123"))?,int,str,list,float,B
+Which method removes item from list?,delete(),remove(),pop(),clear(),B
+What is output of print(3<5)?,True,False,None,Error,A
+Which keyword is used to define class?,class,object,define,struct,A
+What is output of print(10/2)?,5,5.0,2,10,B
+Which function returns length?,size(),count(),len(),length(),C
+What is output of print("Hi".upper())?,hi,HI,Hi,Error,B
+Which keyword is used for exception handling?,try,catch,handle,error,A
+What is output of print(2**4)?,8,16,12,6,B
+Which data type is ordered?,Set,Dictionary,List,None,C
+What is output of print(bool(1))?,True,False,None,Error,A
+Which keyword skips iteration?,continue,skip,pass,break,A
+What is output of print("A"+"B")?,AB,A B,Error,BA,A
+Which operator checks membership?,in,has,inside,between,A
+What is output of print(len([1,2,3,4]))?,3,4,5,2,B
+Which method sorts list?,sort(),arrange(),order(),list(),A
+What is output of print(6!=6)?,True,False,None,Error,B
+Which keyword is used for lambda function?,lambda,def,func,inline,A
+What is output of print(type(3.5))?,int,float,str,list,B
+Which method converts string to lowercase?,lower(),upper(),title(),capitalize(),A
+What is output of print(7//2)?,3.5,3,4,2,B
+Which keyword defines inheritance?,inherits,extends,class,none,C
+What is output of print(bool(""))?,True,False,None,Error,B
+Which operator is logical AND?,&&,&,and,AND,C
+What is output of print(8%3)?,2,3,1,0,A
+Which method removes all list items?,clear(),remove(),delete(),pop(),A
+What is output of print(2+3*2)?,10,8,12,7,B
+Which keyword handles exceptions?,try,catch,handle,error,A
+What is output of print(len("Data"))?,3,4,5,2,B
+Which function converts int to string?,str(),int(),float(),chr(),A
+What is output of print(4>6)?,True,False,None,Error,B
+Which method adds multiple elements?,extend(),append(),insert(),add(),A
+What is output of print("abc".capitalize())?,ABC,Abc,abc,Error,B
+Which keyword is used to define block?,{},[],indentation,(),C
+What is output of print(5*2**2)?,20,25,15,10,A
+Which function converts string to integer?,int(),str(),float(),eval(),A
+What is output of print(len((1,2,3)))?,2,3,4,1,B
+Which keyword is used for else condition?,otherwise,else,elif,then,B
+What is output of print(9>=9)?,True,False,None,Error,A
+Which method inserts at specific position?,insert(),append(),add(),push(),A
+What is output of print(type([1,2,3]))?,list,tuple,set,dict,A

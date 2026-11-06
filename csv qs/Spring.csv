@@ -1,0 +1,60 @@
+What is Spring Boot?,A database,A framework for building Spring applications,An IDE,A server,B
+Which annotation is used to create a Spring Boot application?,@SpringBootApplication,@SpringApplication,@BootApplication,@Spring,A
+Which method starts a Spring Boot application?,start(),run(),main(),execute(),C
+Which class contains the main method in a Spring Boot application?,Controller class,Main application class,Repository class,Entity class,B
+Which dependency is commonly used to create REST APIs?,spring-boot-starter-web,spring-boot-starter-test,spring-boot-starter-data-jpa,spring-boot-starter-mail,A
+What does REST stand for?,Remote Execution Service Technology,Representational State Transfer,Resource Service Transfer,Remote State Transfer,B
+Which annotation is used to create a REST controller?,@Controller,@RestController,@Service,@Repository,B
+Which annotation maps HTTP GET requests?,@GetMapping,@PostMapping,@PutMapping,@DeleteMapping,A
+Which annotation maps HTTP POST requests?,@GetMapping,@PostMapping,@PutMapping,@RequestMapping,B
+Which annotation maps HTTP PUT requests?,@GetMapping,@PostMapping,@PutMapping,@DeleteMapping,C
+Which annotation maps HTTP DELETE requests?,@DeleteMapping,@RemoveMapping,@DeleteRequest,@RemoveRequest,A
+Which annotation is used for dependency injection?,@Autowired,@InjectBean,@Dependency,@BeanInject,A
+Which annotation is used to define a service class?,@Service,@ComponentService,@Business,@ServiceClass,A
+Which annotation is commonly used for database repository classes?,@Repository,@Database,@DAOService,@DataRepository,A
+Which annotation is used to define a Spring component?,@Component,@Class,@Object,@SpringClass,A
+Which file is commonly used for Spring Boot configuration?,application.properties,spring.xml,boot.config,config.java,A
+What is the default port of a Spring Boot application?,80,8080,443,3000,B
+Which property changes the default server port?,server.port,spring.port,server.number,application.port,A
+Which annotation is used to map a URL to a controller method?,@RequestMapping,@URLMapping,@Path,@RouteMapping,A
+Which annotation reads a value from the URL path?,@RequestParam,@PathVariable,@RequestBody,@PathValue,B
+Which annotation reads query parameters?,@RequestParam,@PathVariable,@RequestBody,@QueryValue,A
+Which annotation reads JSON data from the request body?,@RequestBody,@RequestData,@Body,@JsonBody,A
+Which HTTP method is normally used to retrieve data?,POST,GET,PUT,DELETE,B
+Which HTTP method is normally used to create data?,GET,POST,PUT,DELETE,B
+Which HTTP method is normally used to update data?,GET,POST,PUT,TRACE,C
+Which HTTP method is normally used to delete data?,GET,POST,PUT,DELETE,D
+What does JPA stand for?,Java Persistence API,Java Programming Application,Java Process API,Java Persistence Architecture,A
+Which Spring Boot starter is commonly used with JPA?,spring-boot-starter-jpa,spring-boot-jpa-web,spring-jpa-starter,spring-boot-database,A
+Which annotation marks a class as a database entity?,@Entity,@Database,@TableEntity,@Model,A
+Which annotation identifies the primary key of an entity?,@Primary,@Id,@Key,@PrimaryKey,B
+Which annotation maps a class to a database table?,@Table,@DatabaseTable,@TableMapping,@DBTable,A
+Which annotation maps a Java field to a database column?,@Column,@FieldColumn,@DBColumn,@ColumnField,A
+Which interface is commonly extended to create a JPA repository?,JpaRepository,DatabaseRepository,JPAService,EntityRepository,A
+Which package contains JpaRepository?,org.springframework.data.jpa.repository,org.springframework.jpa,org.springframework.boot.jpa,javax.jpa.repository,A
+What does IoC stand for?,Internet of Code,Inversion of Control,Input Output Control,Internal Object Creation,B
+What is Dependency Injection?,Creating database tables,Providing required dependencies to a class,Starting a server,Compiling Java code,B
+Which dependency injection style is generally preferred?,Constructor injection,File injection,XML injection,Package injection,A
+Which annotation can be used to create a bean manually?,@Bean,@Object,@CreateBean,@SpringBean,A
+Which annotation is used to define a configuration class?,@Configuration,@ConfigClass,@SpringConfig,@ApplicationConfig,A
+What is a Spring Bean?,A database table,An object managed by Spring,A Java package,A server,B
+Which annotation marks a class as a configuration source?,@Configuration,@Config,@Source,@SpringConfiguration,A
+What is the purpose of @ComponentScan?,Scans for Spring components,Scans databases,Scans HTML files,Scans network ports,A
+Which annotation enables automatic configuration in Spring Boot?,@EnableAutoConfiguration,@AutoConfig,@EnableSpring,@BootConfig,A
+What is Spring Boot Auto Configuration?,Automatically configures application components based on dependencies,Automatically writes Java code,Automatically creates users,Automatically starts Git,A
+Which file can be used instead of application.properties?,application.yml,spring.xml,boot.yml,config.json,A
+Which dependency is used for testing in Spring Boot?,spring-boot-starter-test,spring-boot-test-only,spring-testing,boot-test-api,A
+Which framework is commonly used for unit testing Java applications?,JUnit,Maven,Tomcat,Hibernate,A
+Which annotation is used for a Spring Boot test?,@SpringBootTest,@BootTestOnly,@SpringTest,@ApplicationTest,A
+What is Maven used for in a Spring Boot project?,Dependency and build management,Database hosting,Web browsing,Code editing,A
+Which file contains Maven dependencies?,pom.xml,build.xml,dependency.xml,spring.xml,A
+Which tool is an alternative to Maven for building Spring Boot projects?,Gradle,Tomcat,JUnit,Hibernate,A
+Which file is commonly used by Gradle?,build.gradle,pom.gradle,spring.gradle,project.xml,A
+What is Tomcat?,A database,A web server/servlet container,A testing framework,A build tool,B
+Which embedded server is commonly included with Spring Boot Web?,Tomcat,MySQL,MongoDB,Apache Maven,A
+Can Spring Boot applications run without installing Tomcat separately?,Yes, using embedded server,Only on Linux,Only with Maven,A
+What is the purpose of Spring Boot Starter dependencies?,Simplify dependency management,Create database records,Compile Java manually,Replace Java,A
+Which starter is commonly used for validation?,spring-boot-starter-validation,spring-boot-validation-api,spring-validation-starter-only,boot-validator,A
+Which annotation is used to validate a REST request body?,@Valid,@ValidateBody,@Check,@Validation,A
+Which annotation is commonly used to specify a required field?,@NotNull,@RequiredField,@Mandatory,@RequiredValue,A
+What does DTO stand for?,Data Transfer Object,Database Transfer Operation,Data Table Object,Direct Transfer Object,A

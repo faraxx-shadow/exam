@@ -1,0 +1,60 @@
+What is NumPy primarily used for?,Web development,Numerical computing,Game design,Networking,B
+Which function creates a NumPy array?,np.create(),np.array(),np.make(),np.build(),B
+Which function generates values from 0 to n-1?,np.range(),np.arange(),np.linspace(),np.list(),B
+Which function creates an identity matrix?,np.identity(),np.eye(),np.diagonal(),np.matrix(),B
+Which function creates an array filled with zeros?,np.empty(),np.zeros(),np.blank(),np.null(),B
+Which function creates an array filled with ones?,np.ones(),np.fullone(),np.single(),np.unit(),A
+Which attribute returns the shape of an array?,size,shape,length,type,B
+Which function changes array shape?,reshape(),resize(),reform(),rearrange(),A
+How to flatten an array?,flatten(),reshape(-1),ravel(),All of these,D
+Which function joins arrays?,np.merge(),np.join(),np.concatenate(),np.combine(),C
+Which function stacks arrays vertically?,np.vstack(),np.hstack(),np.dstack(),np.rowstack(),A
+Which function stacks arrays horizontally?,np.hstack(),np.vstack(),np.side(),np.column(),A
+Which function splits arrays?,np.divide(),np.array_split(),np.cut(),np.break(),B
+Which function sorts an array?,np.arrange(),np.order(),np.sort(),np.rank(),C
+Which module generates random numbers?,np.random(),np.rand(),np.number(),np.gen(),A
+Which function returns random integers?,random.int(),random.randint(),np.randomint(),np.int(),B
+Which function shuffles array in-place?,random.shuffle(),random.mix(),np.shuffle(),np.mix(),A
+Which function returns permutation?,random.permutation(),random.shuffle(),np.permute(),np.randomize(),A
+Which distribution models normal data?,Binomial,Poisson,Normal,Uniform,C
+Which function creates universal function from python function?,np.vectorize(),np.ufunc(),np.frompyfunc(),np.createfunc(),C
+What is Pandas mainly used for?,Web scraping,Data analysis,Game design,AI training,B
+Which function creates a Series?,pd.Series(),pd.Array(),pd.Column(),pd.List(),A
+Which function creates DataFrame?,pd.DataFrame(),pd.Table(),pd.Frame(),pd.Data(),A
+Which function reads CSV file?,pd.load_csv(),pd.read_csv(),pd.csv(),pd.open(),B
+Which function reads JSON file?,pd.read_json(),pd.load_json(),pd.json(),pd.import_json(),A
+Which attribute selects rows by label?,iloc,loc,index,row,B
+Which function shows first 5 rows?,head(),first(),top(),preview(),A
+Which function shows last 5 rows?,tail(),last(),bottom(),end(),A
+Which function gives dataset info?,df.info(),df.describe(),df.data(),df.details(),A
+Which function removes null values?,dropna(),removena(),deletena(),cleanna(),A
+Which function fills null values?,fillna(),replacena(),setna(),insertna(),A
+Which function removes duplicates?,drop_duplicates(),remove_duplicates(),delete_dup(),clean_dup(),A
+Which function checks duplicates?,duplicated(),checkdup(),finddup(),dupcheck(),A
+Which function finds correlation?,corr(),relation(),connect(),associate(),A
+Which function converts to datetime?,pd.to_datetime(),pd.date(),pd.convertdate(),pd.datetime(),A
+Which function removes row by index?,drop(),remove(),delete(),pop(),A
+Which function prints entire DataFrame as string?,to_string(),print_all(),show_all(),display_all(),A
+Which parameter changes original DataFrame?,permanent=True,inplace=True,update=True,save=True,B
+Which function selects multiple rows?,loc[[ ]],iloc[[ ]],both A and B,select(),C
+Which function describes statistics?,describe(),stats(),summary(),analysis(),A
+Matplotlib is used for?,Data cleaning,Visualization,Machine learning,Database,B
+Which module is mostly used in Matplotlib?,pyplot(),plotlib(),graph(),chart(),A
+Which function plots a line graph?,plt.plot(),plt.line(),plt.draw(),plt.graph(),A
+Which function displays plot?,plt.show(),plt.display(),plt.view(),plt.open(),A
+Which function sets x label?,plt.xlabel(),plt.xname(),plt.labelx(),plt.setx(),A
+Which function sets y label?,plt.ylabel(),plt.yname(),plt.labely(),plt.sety(),A
+Which function sets title?,plt.title(),plt.heading(),plt.name(),plt.caption(),A
+Which function adds grid?,plt.grid(),plt.lines(),plt.background(),plt.axisgrid(),A
+Which function creates subplot?,plt.subplot(),plt.subgraph(),plt.split(),plt.part(),A
+Which function creates scatter plot?,plt.scatter(),plt.dot(),plt.points(),plt.mark(),A
+Which function creates bar chart?,plt.bar(),plt.column(),plt.histbar(),plt.chart(),A
+Which function creates horizontal bar chart?,plt.barh(),plt.hbar(),plt.bar_horizontal(),plt.hchart(),A
+Which function creates histogram?,plt.hist(),plt.histo(),plt.distribution(),plt.graphhist(),A
+Which function creates pie chart?,plt.pie(),plt.circle(),plt.round(),plt.chartpie(),A
+Which function adds legend?,plt.legend(),plt.key(),plt.info(),plt.note(),A
+Which parameter sets marker size?,ms,size,marker_size,markers,A
+Which parameter sets line style?,ls,linestyle,style,both A and B,D
+Which parameter sets color?,c,color,both A and B,D,
+Which function sets font properties?,fontdict,fontstyle,fontprop,fontset,A
+Which parameter adds shadow in pie chart?,shadow=True,shade=True,depth=True,effect=True,A
